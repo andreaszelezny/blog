@@ -1,0 +1,26 @@
+---
+title: 'Cyberkrieg: Wahrheit und Fiktion'
+author: Andy
+type: post
+showtoc: false
+date: 2011-08-12T20:54:47+00:00
+url: /post/cyberkrieg-wahrheit-und-fiktion/
+categories:
+  - Information Security
+tags:
+  - cyber warfare
+
+---
+Nur wenige Themen haben in letzter Zeit in den Medien so viel Beachtung gefunden wie Cyber-Warfare. Manche Kommentatoren sehen bereits das Ende konventioneller Kriegsf&uuml;hrung und haben die Vision, wie im virtuellen Raum Bits gegen Bits und Bytes gegen Bytes k&auml;mpfen, ohne dass menschliches Blut vergossen wird. Dies ist nat&uuml;rlich Unsinn. Auch wenn die Informationstechnologie eine immer gr&ouml;&szlig;ere Rolle in unserem heutigen Alltag einnimmt, so bleibt sie doch blo&szlig; ein Mittel zum Zweck. Sie wird im modernen Krieg eine vorbereitende und unterst&uuml;tzende Rolle einnehmen, aber nicht mehr. Wie das dann funktionieren wird, konnte man im Kaukasuskrieg 2008 erkennen. Wenige Stunden vor bzw. gleichzeitig mit dem Einmarsch werden wichtige IT-Strukturen &uuml;ber das Internet angegriffen und sabotiert.
+
+**Stuxnet hat einen Krieg vermieden**  
+Auch Stuxnet l&auml;utete keine neue &Auml;ra der Kriegsf&uuml;hrung ein. Stuxnet war ein Sabotageakt, der geholfen hat, einen Krieg zu vermeiden statt zu f&uuml;hren. Fr&uuml;her h&auml;tte man einen Saboteur in eine feindliche Fabrik gesandt, heute macht man das per USB-Stick. Dank des Erfolges von Stuxnet wurde das iranische Atomprogramm um gesch&auml;tzte zwei Jahre aufgehalten. Die USA und Israel haben nun zwei Jahre mehr Zeit gewonnen, um &uuml;ber ihre n&auml;chsten Schritte nachzudenken und diese vorzubereiten. Wir k&ouml;nnen sicher sein, dass sie dies auch gerade tun.
+
+Die Bef&uuml;rchtung, dass nun eine Welle von Stuxnet-Nachahmungen auftauchen k&ouml;nnte und die halbe westliche Welt lahm legen werde, ist unbegr&uuml;ndet. Stuxnet ist eine hochkomplexe Software, deren Entwicklung nicht nur ein Team von erfahrenen Experten aus mehreren Fachgebieten ben&ouml;tigte, sondern auch Millionen Euro kostete und viele Monate in Anspruch nahm. Es gibt nur f&uuml;nf oder sechs L&auml;nder weltweit, die so ein Projekt durchf&uuml;hren k&ouml;nnen. Das Wissen um dieses K&ouml;nnen dient zur gegenseitigen Abschreckung. In diesem Licht ist auch die j&uuml;ngste Erkl&auml;rung des Pentagons zu sehen, die einen milit&auml;rischen Gegenschlag als Antwort auf einen Cyberangriff anf&uuml;hrt.
+
+Viel gr&ouml;&szlig;ere und realistischere Bedrohung geht von den zahlreichen Crackern und Cyberkriminellen aus, die in letzter Zeit in die Webseiten und Server von bekannten Unternehmen wie Sega, Nintendo und Sony eingedrungen sind. Es handelt sich dabei nicht um ausl&auml;ndische Milit&auml;rexperten, sondern um jugendliche Hobby-Hacker (sogenannte &bdquo;Script-Kiddies&ldquo;), die sich im Internet austoben, und Kriminelle, die damit Geld verdienen. Beide Gruppen bedienen sich spezieller Angriffssoftware, die im Internet kostenlos oder f&uuml;r wenig Geld erh&auml;ltlich sind. Und beide Gruppen wissen auch, dass die Wahrscheinlichkeit, &uuml;berf&uuml;hrt und f&uuml;r die Taten zur Rechenschaft gezogen zu werden, &auml;u&szlig;erst gering ist. Es ist nur eine Frage der Zeit, bis sich auch Terrororganisationen dieser einfachen, aber effektiven Angriffsmethoden bedienen werden.
+
+**Ein politisches Problem**  
+Die L&ouml;sungen, die bisher zur Erh&ouml;hung der Sicherheit im Internet vorgeschlagen wurden, sind nicht ausreichend. Es handelt sich n&auml;mlich dabei in erster Linie um ein politisches Problem und erst in zweiter Linie um ein technisches. Eine vollst&auml;ndige Kontrolle des Internets mit technischen Mitteln ist nicht m&ouml;glich. Aber das sollte auch nicht das Ziel sein. Die gesamte IT-Sicherheit muss sich aus seiner reaktiven Position befreien und viel st&auml;rker pr&auml;ventiv und dynamisch agieren. Dies geht nur mit Hilfe der Politik. So wie es staatliche Brandschutzbestimmungen f&uuml;r H&auml;user gibt, die ein Mindestma&szlig; an Sicherheit vorschreiben, so muss es auch einen von staatlicher Seite verlangten Mindest-IT-Schutz f&uuml;r Unternehmen und Institutionen geben, der erf&uuml;llt werden muss. 
+
+Es sollte hinterfragt werden, ob wirklich jedes Wasserkraftwerk oder Heizwerk an das Internet angeschlossen werden muss. Dies ist zwar einfach und kosteng&uuml;nstig, stellt aber ein v&ouml;llig unn&ouml;tiges Risiko dar. Das Zivil- und Strafrecht muss besser an die Internetkriminalit&auml;t angepasst werden, gleichfalls die Computerforensik der Polizeibeh&ouml;rden. Es wird kein Weg daran vorbei f&uuml;hren, dass sich kritische Computersysteme und -netzwerke von statischen, leicht erkund- und angreifbaren Gebilden zu sich permanent selbstst&auml;ndig ver&auml;ndernden Systemen (sogenannten &bdquo;Moving Targets&ldquo;) entwickeln, die m&ouml;glichst wenig Angriffsfl&auml;che f&uuml;r m&ouml;glichst kurze Zeit bieten. Mit Ma&szlig;nahmen wie diesen kann die Internetsicherheit und Widerstandsf&auml;higkeit im Alltag und im Falle eines Angriffs durch Cyberterroristen signifikant erh&ouml;ht werden.
