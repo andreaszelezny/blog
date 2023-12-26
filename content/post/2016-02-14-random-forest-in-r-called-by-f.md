@@ -8,7 +8,7 @@ showtoc: false
 categories:
   - Machine Learning
 tags:
-  - 'f#'
+  - f sharp
   - r
   - random forest
 

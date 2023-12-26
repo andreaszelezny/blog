@@ -9,7 +9,7 @@ categories:
   - Machine Learning
 tags:
   - decision tree
-  - 'f#'
+  - f sharp
   - r
 
 ---

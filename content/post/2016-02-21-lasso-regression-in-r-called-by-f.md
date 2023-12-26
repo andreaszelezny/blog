@@ -7,7 +7,7 @@ showtoc: false
 categories:
   - Machine Learning
 tags:
-  - 'f#'
+  - f sharp
   - lasso regression
   - r
 
