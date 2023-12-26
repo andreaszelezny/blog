@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>facebook on Andreas Zelezny</title>
+    <link>https://andreaszelezny.netlify.app/tags/facebook/</link>
+    <description>Recent content in facebook on Andreas Zelezny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2010 20:56:17 +0000</lastBuildDate>
+    <atom:link href="https://andreaszelezny.netlify.app/tags/facebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Das Sicherheitsrisiko Facebook minimieren</title>
+      <link>https://andreaszelezny.netlify.app/post/das-sicherheitsrisiko-facebook-minimieren/</link>
+      <pubDate>Sun, 12 Dec 2010 20:56:17 +0000</pubDate>
+      <guid>https://andreaszelezny.netlify.app/post/das-sicherheitsrisiko-facebook-minimieren/</guid>
+      <description>Soziale Netzwerke sind heutzutage allgegenwärtig und sehr populär. Privatpersonen und Unternehmen verwenden Facebook, Twitter, Xing, LinkedIn u.a., um mit anderen Benutzern in Kontakt zu treten.
+Welche Sicherheitsrisiken ergeben sich daraus?
+Identitätsdiebstahl: Identitätsdiebe finden auf jenen Webseiten viele Informationen über ihre Opfer. Genug Menschen veröffentlichen ihr ganzes Leben in ihren Onlineprofilen. Auch Social Engineering für zukünftige Hackerangriffe wird dadurch deutlich erleichtert. Malware: Schadcode (z.B. Viren, Trojaner), der von anderen Benutzern hochgeladen wurde, wird heruntergeladen und ausgeführt.</description>
+    </item>
+  </channel>
+</rss>

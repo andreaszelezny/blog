@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cobit on Andreas Zelezny</title>
+    <link>https://andreaszelezny.netlify.app/tags/cobit/</link>
+    <description>Recent content in cobit on Andreas Zelezny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Feb 2016 16:10:56 +0000</lastBuildDate>
+    <atom:link href="https://andreaszelezny.netlify.app/tags/cobit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>COBIT 5 Kurzüberblick</title>
+      <link>https://andreaszelezny.netlify.app/post/cobit-5-kurzuberblick/</link>
+      <pubDate>Sat, 13 Feb 2016 16:10:56 +0000</pubDate>
+      <guid>https://andreaszelezny.netlify.app/post/cobit-5-kurzuberblick/</guid>
+      <description>“Wenn ich weiter sehen konnte, so deshalb, weil ich auf den Schultern von Riesen stand.” (Isaac Newton)
+Was ist COBIT?
+COBIT ist das weltweit führende Framework für IT-Governance und wird von 95% der internationalen Großunternehmen (u.a. Generali Italien) vollständig oder teilweise umgesetzt. COBIT erhebt den Anspruch, das Bindeglied zwischen den unternehmensweiten Steuerungs-Frameworks und den IT-spezifischen Modellen (z.B. ITIL, ISO 27001/27002) zu sein. Das Ziel von COBIT ist, die Integration der IT-Governance in die Corporate Governance zu gewährleisten.</description>
+    </item>
+  </channel>
+</rss>

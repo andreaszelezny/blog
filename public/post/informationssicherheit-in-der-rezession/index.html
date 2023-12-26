@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Andreas Zelezny">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://andreaszelezny.netlify.app//">
+    <meta property="twitter:image" content="https://andreaszelezny.netlify.app//" />
+    
+
+    
+    <meta name="title" content="Informationssicherheit in der Rezession" />
+    <meta property="og:title" content="Informationssicherheit in der Rezession" />
+    <meta property="twitter:title" content="Informationssicherheit in der Rezession" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Informationssicherheit in der Rezession | Andreas Zelezny Blog Cybersecurity Information Security CISO Speaker Author</title>
+
+    <link rel="canonical" href="/post/informationssicherheit-in-der-rezession/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andreas Zelezny</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/books//">BOOKS</a></li>
+                    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>Informationssicherheit in der Rezession</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted on 
+                            12 February 2010
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>Die Rezession der letzten Jahre hatte Auswirkungen auf die IT-Sicherheitsbudgets der Unternehmen, aber auch auf die Bedrohungslandschaft. Es war eine Zeit großer Herausforderungen für alle diejenigen, die für die Informationssicherheit verantwortlich waren. Aus meinen Gesprächen mit Kunden weiß ich, dass in den Unternehmen vorrangig Kosten gespart wurden, indem Projekte eine Nummer kleiner ausgeführt oder in die Zukunft verschoben wurden. Und dies obwohl die Bedrohungslage zur gleichen Zeit stetig weiter wuchs.</p>
+<p>Eine erfreuliche Entwicklung hat es jedoch auch gegeben: IT-Sicherheitsverantwortliche müssen verstärkt dem Management gegenüber Rechenschaft für ihre Ausgaben ablegen. Auch wenn noch immer viele IT-Manager das nicht gerne hören, aber die Informationstechnologie (und damit auch die Informationssicherheit) ist kein Selbstzweck sondern ein Unterstützungsprozess des Geschäftsbetriebes. Sie muss sich daher wie jeder anderer Prozess auch quantifizieren und rechtfertigen können (z.B. Return on Investment, ROI). Dass dies nicht immer einfach ist, ist kein Grund es nicht zu tun. Der Wert der Informationssicherheit kann und muss quantifiziert werden. Durch die angespannte Budgetlage waren viele IT-Verantwortliche und IT-Administratoren gezwungen, enger mit dem Management zusammen zu arbeiten, detaillierte Pläne zu erstellen und überzeugende Businesscases zu entwickeln.</p>
+<p>Beim Management erhält die Absicherung der Unternehmensdaten und die Vermeidung von Datenverlusten nach außen (“Data Loss Prevention”, DLP) immer mehr Bedeutung.</p>
+<p><strong>Kriminalität stieg in der Rezession</strong><br>
+Während die meisten Sicherheitsbudgets gleich blieben oder leicht sanken, stieg die Internetkriminalität in der Rezession deutlich an. Internetkriminalität ist heutzutage ein Geschäft. Es braucht keinen hochqualifizierten Hacker mehr, sondern jeder Jugendliche (sogenannte “Script Kiddies”) kann fertige Malware-Kits herunterladen und seine eigenen Angriffe durchführen. Viele dieser Kits beinhalten sogar eine Geld-zurück-Garantie und technischen Support. Internationale Verbrecherbanden vermieten ihre Bot-Netze auf Zeit und helfen Kleinkriminellen bei der Geldwäsche jenes gestohlenen Geldes, das sie mittels Online-Banking-Trojaner erbeutet haben. Diese fortschreitende Industrialisierung der Internetkriminalität nennt man auch “Cybercrime as a Service”.</p>
+<p>Im letzten Jahr stieg vor allem die Zahl der Schadsoftware, auch bedingt durch die “Script Kiddies”. Es tauchen von jedem Schädling immer neuere Varianten auf, die sich nur wenig unterscheiden, trotzdem aber viel Arbeit für die Anti-Virus-Softwarehersteller bedeuten. Auch die Zahl der “Drive-by-Infektionen” erhöhte sich. Dabei handelt es sich um Schadsoftware, die auf bekannten und seriösen Webseiten versteckt wird und den Computer des Besuchers infizieren.</p>
+<p>Eine weitere Tendenz ist der Anstieg der Angriffe auf populäre Anwendungen wie Flash und Acrobat Reader. Viele dieser Angriffe könnten durch regelmäßiges und zeitnahes Aktualisieren der Software unterbunden werden.</p>
+<p>Auch die steigende Bedeutung des Web 2.0 brachte und bringt viele Gefahren, da von anderen Benutzern hochgeladene Dateien eine Hauptquelle für Schadsoftware sind. Für Identitätsdiebe sind soziale Netzwerke eine große Arbeitserleichterung, da sie dort viele benötigte Informationen über ihre Zielpersonen finden.</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/post/das-sicherheitsrisiko-facebook-minimieren/" data-toggle="tooltip" data-placement="top" title="Das Sicherheitsrisiko Facebook minimieren">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/ai" title="ai">
+                            ai
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/cryptography" title="cryptography">
+                            cryptography
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/f" title="f#">
+                            f#
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdpCYpJ0JXH3Ztw7BiYJQuHKYDUZrekp2NGEz1pDDfKe0Dt1Q/viewform?usp=sf_link">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                     
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Andreas Zelezny" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 2023 Andreas Zelezny
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

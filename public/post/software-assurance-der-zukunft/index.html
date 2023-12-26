@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Andreas Zelezny">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://andreaszelezny.netlify.app//">
+    <meta property="twitter:image" content="https://andreaszelezny.netlify.app//" />
+    
+
+    
+    <meta name="title" content="Software Assurance der Zukunft" />
+    <meta property="og:title" content="Software Assurance der Zukunft" />
+    <meta property="twitter:title" content="Software Assurance der Zukunft" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Software Assurance der Zukunft | Andreas Zelezny Blog Cybersecurity Information Security CISO Speaker Author</title>
+
+    <link rel="canonical" href="/post/software-assurance-der-zukunft/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andreas Zelezny</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/books//">BOOKS</a></li>
+                    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/assurance" title="assurance">
+                            assurance
+                        </a>
+                        
+                        <a class="tag" href="/tags/sdlc" title="sdlc">
+                            sdlc
+                        </a>
+                        
+                    </div>
+                    <h1>Software Assurance der Zukunft</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted on 
+                            5 February 2011
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>Software Assurance wird definiert als das Maß an Gewissheit, dass eine Software frei ist von Sicherheitsschwachstellen, die entweder bewusst in die Software eingeplant oder unabsichtlich während des Softwareentwicklungsprozesses (Software Development Life Cycle, SDLC) eingefügt wurden, und dass die Software wie vorgesehen funktioniert.</p>
+<p><strong>Aktuelle Herausforderungen</strong><br>
+Die große Bedeutung software-abhängiger Systeme in unserer Welt und die zahlreichen Risiken und Bedrohungen für diese Systeme, die von Einzelpersonen, Organisationen und Staaten ausgehen, verlangt nach Software, die frei von Schwachstellen ist und wie geplant funktioniert.</p>
+<p>In der Vergangenheit haben Unternehmen und Behörden benötigte Software und Systemlösungen selbst entwickelt. Dabei konnten Softwaresicherheit und Assuranceanforderungen direkt im SDLC berücksichtigt werden. Da Unternehmen und Behörden immer mehr zu kommerziellen Standardprodukten und ausgelagerter Entwicklung von großen Systemen übergehen, hat sich der Ort der Kontrolle geändert. Da Software Assurance bereits während des SDLC berücksichtigt werden muss und nicht einfach wie ein Softwarepatch am Ende des SDLC aufgespielt werden kann, müssen die Auftraggeber bzw. Käufer überprüfen, wie ihre Vertragspartner Softwaresicherheit und Assuranceanforderungen während des SDLC umsetzen.</p>
+<p>Kommerzielle Softwareanbieter reagieren normalerweise zuerst auf die Nachfrage des Marktes nach besseren und neuen Features und nach einer kürzeren Entwicklungszeit. In den meisten Fällen stellt der Käufer nur einen kleinen Teil der Kundenbasis eines Anbieters dar, hat daher wenig Marktmacht. Softwareanbieter spüren daher keinen wirklichen Druck vom Markt oder vom Käufer bei einer Auftragsentwicklung. Sicherheitsaspekte können als Erschwernisse bei der Implementierung gewünschter Features und Funktionalitäten wahrgenommen werden. Die Folge ist, dass Softwarehersteller und ihre Kunden den Wert von Sicherheit erst erkennen, wenn das Schlimmste bereits passiert ist. Dies muss sich ändern.</p>
+<p><strong>Ziele</strong><br>
+Ein Software-Assurance-Programm, das die oben geschilderten aktuellen Herausforderungen meistern will, muss folgende Bestandteile aufweisen:</p>
+<ul>
+<li><strong>Risikomanagement der Softwarewertschöpfungskette:</strong> Eine abgesicherte Wertschöpfungskette (Supply Chain) für Software ist unabdingbar, da der Outsourcinganteil immer mehr ansteigt und sich dadurch zahlreiche Risikoquellen öffnen.</li>
+<li><strong>Überprüfungen und Kontrollen:</strong> Umfangreichere diagnostische Verfahren mit Mess- und Analysemethoden werden benötigt, um zuverlässige quantitative Informationen über die Softwaresicherheit zu liefern. Für das Fällen von risikobasierten Entscheidungen wird ein Regelwerk benötigt, das auf diesen Informationen zugreift. Aktuell angewandte Verfahren sind unausgereift und unzureichend für diese Zwecke.</li>
+</ul>
+<p><strong>Risikomanagement der Softwarewertschöpfungskette</strong><br>
+Die Softwareentwicklung muss Sicherheitsrisiken, die durch manipulierbare Software entstehen können, explizit während des gesamten SDLC behandeln.</p>
+<p>Neben physischer Sicherheit stellen Diebstahl des geistigen Eigentums, Produktfälschungen, unsichere Software von Herstellern mit niedrigen Sicherheitsstandards und Software, die absichtlich mit bösartigen Funktionen wie Keyloggern, logischen Bomben und versteckten Backdoors ausgestattet wurde, Risiken für die Wertschöpfungskette dar.</p>
+<p>Leider jedoch sind viele Gesetze, Programme, Standards und Praktiken, die die IT- und Software-Sicherheit regeln, nicht ausgereift. Herkömmliche Prozesse konzentrieren sich auf die Infrastrukturkomponenten und nicht explizit auf die softwarebezogenen Sicherheitsrisiken. Eine erfolgreiche Risikominderung in der Softwarewertschöpfungskette muss folgende Herausforderungen bewältigen:</p>
+<ul>
+<li><strong>Komplexität der Wertschöpfungskette:</strong> Größte Herausforderung ist die Komplexität, die es erschwert, das Codeverhalten einer Software festzustellen und vorherzusagen. Dadurch wird bei sicherheitskritischen Anwendungen jegliche Software-Assurance-Aussage eingeschränkt.</li>
+<li><strong>Unzureichende Datenbasis für das Überprüfen von Software-Assurance-Aussagen:</strong> Die Softwarewertschöpfungskette leidet unter ungenügenden diagnostischen Verfahren und dem Fehlen allgemein anerkannter Standards, auf deren Basis Aussagen über die Software Assurance und Qualität von Produkten, Systemen und Diensten gemacht werden sollte. Daher ist heutzutage das wichtigste Entscheidungskriterium bei sicherheitskritischen Anwendungen der Standort des Herstellers. Kunden fehlt die Transparenz um bessere Entscheidungen zur Risikominimierung zu treffen. Das bedeutet allerdings auch, dass die einfache Bevorzugung heimischer Lieferanten/Hersteller nicht den Erwerb von sicheren Komponenten garantiert, da keine allgemein anerkannten Benchmarkingverfahren existieren, um die organisatorischen und technischen Fähigkeiten des Herstellers, sichere Produkte und Dienstleistungen entwickeln und liefern zu können, zu überprüfen.</li>
+<li><strong>Mangel an Kooperation:</strong> Das Absichern der Softwarewertschöpfungskette ist schwierig, wenn nicht alle Teilnehmer davon überzeugt sind, dass Software Assurance eine lohnenswerte Investition ihrer Zeit und Ressourcen darstellt.</li>
+</ul>
+<p><strong>Überprüfung von Software-Assurance-Aussagen</strong><br>
+Das Risikomanagement für die Wertschöpfungskette beinhaltet sowohl Unternehmens- als auch Projektaspekte. Auf Unternehmensgebiet müssen Compliance, die sich stetig ändernde Bedrohungslandschaft und der Businesscase für Software Assurance berücksichtigt werden. Auf Projektgebiet konzentriert sich das Risikomanagement auf Kosten, Termine und Leistungen.</p>
+<p>Auf diesen zwei Gebieten müssen international anerkannte Standards entwickelt werden, um Prozesse zur informierten Entscheidungsfindung zu unterstützen. Neueste Entwicklungen in diesem Bereich sind das Assurance Process Reference Model für Capability Maturity Model Integration (CMMI), das Building Security In Maturity Model (BSIMM) und das Open Software Assurance Maturity Model (OpenSAMM).</p>
+<p><em>Kostenrechtfertigung für Software Assurance</em><br>
+Sämtlicher Aufwand zur Reduktion von Sicherheitsrisiken ist am kosten-effektivsten wenn er während des SDLC gemacht wurde.</p>
+<p><em>Entwicklung neuer Verfahren zur Absicherung der Softwarewertschöpfungskette</em><br>
+Der Bedarf nach neuen Verfahren, um die Softwarewertschöpfungskette abzusichern, ist da. Hier ist die Wissenschaft und Forschung gefordert, da aktuelle Verfahren nicht ausreichend sind.</p>
+<p><em>Software-Assurance-Messung</em><br>
+Aktuelle Software- und Systemmessinstrumente berücksichtigen Sicherheit und Software Assurance nicht als Maßstab für Qualität. Daher ignorieren sie zahlreiche Faktoren, die Software kompromittieren und sie Angriffen aussetzen können. Da keine standardisierten Messinstrumente für Software Assurance existieren, ist es schwierig – wenn nicht unmöglich – informierte Entscheidungen während des SDLC über die Informationssicherheit, Compliance, Leistungsfähigkeit und funktionalen Anforderungen zu treffen.</p>
+<p><em>Fehlen von qualifiziertem Personal</em><br>
+Nur wenige Entwickler besitzen das nötige Hintergrundwissen, um sichere Software zu erstellen. In der universitären Ausbildung ist Software Assurance keine eigene Disziplin sondern ist auf vielen unterschiedlichen Fächern aufgeteilt. Folglich bezweifeln Behörden und Industriekunden zu Recht die Fähigkeiten von Herstellern, sichere Software mit einem benötigten Grad an Integrität zu entwickeln und ein Mindestmaß an verantwortungsvollen Praktiken auszuüben. Dieses Problem wird verstärkt durch den Mangel an Weiterbildung für hohe Beamte und Einkaufspersonal, um Kaufentscheidungen für Technologieprodukte anhand ihres jeweiligen Sicherheitsbedarfs zu treffen.</p>
+<p><strong>Blick in die Zukunft</strong><br>
+Das junge Feld der Software Assurance hat in den letzten Jahren bereits einiges erreicht, dennoch liegt noch viel Arbeit vor uns. Hier werden vor allem die US-Amerikaner mit ihrer “National Strategy to Secure Cyberspace” den größten Einfluss haben.</p>
+<p><em>Diagnostische Verfahren</em><br>
+Durch die Zusammenarbeit von Behörden, Universitäten und Industrie werden bessere diagnostische Verfahren zur Minderung der Risiken aus Sicherheitslücken und -schwachstellen entwickelt werden. Auch der Einsatz von Messinstrumenten und Benchmarkingverfahren für die Softwaresicherheit wird sich weiterentwickeln. Sie werden zu den Faktoren Qualität und Sicherheit den Einkaufsverantwortlichen eine ausreichende Datenbasis liefern, um Einkaufsentscheidungen zu treffen, und Herstellern eine zuverlässige Datenbasis zum Vergleich und zur Positionierung ihrer Produkte gegenüber der Konkurrenz. Die Verwendung derartiger Tools und Verfahren wird ein Teil des normalen Geschäftsbetriebes werden.</p>
+<p><em>Die Berücksichtigung von Risiken in der Wertschöpfungskette</em><br>
+Einkaufsmanager und Anwender werden Risiken in der Softwarewertschöpfungskette im Rahmen ihres jeweiligen Risikominimierungsprogrammes berücksichtigen. Informationen über Fähigkeiten und Geschäftspraktiken eines bestimmten Herstellers stehen zur Verfügung, um die Sicherheitsrisiken, die die Produkte und Dienstleistungen des Herstellers beinhalten, berechnen zu können. Informationen über geprüfte Produkte und deren Sicherheitsschwachstellen sind vorhanden. Produkte werden standardmäßig vom Hersteller sicher konfiguriert.</p>
+<p><em>Anerkannte Sicherheits- und Software-Assurance-Standards</em><br>
+Die Sicherheit und Qualität von Software wird mittels Standards und geeigneten Tools von unabhängigen Dritten zertifiziert.</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/drahtlose-unsicherheit/" data-toggle="tooltip" data-placement="top" title="Drahtlose Unsicherheit">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/der-weg-zu-vertrauenswurdigeren-systemen/" data-toggle="tooltip" data-placement="top" title="Der Weg zu vertrauenswürdigeren Systemen">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/ai" title="ai">
+                            ai
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/cryptography" title="cryptography">
+                            cryptography
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/f" title="f#">
+                            f#
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdpCYpJ0JXH3Ztw7BiYJQuHKYDUZrekp2NGEz1pDDfKe0Dt1Q/viewform?usp=sf_link">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                     
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Andreas Zelezny" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 2023 Andreas Zelezny
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

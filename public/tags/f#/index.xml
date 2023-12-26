@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>f# on Andreas Zelezny</title>
+    <link>https://andreaszelezny.netlify.app/tags/f#/</link>
+    <description>Recent content in f# on Andreas Zelezny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Feb 2016 23:59:08 +0000</lastBuildDate>
+    <atom:link href="https://andreaszelezny.netlify.app/tags/f#/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lasso Regression in R Called by F#</title>
+      <link>https://andreaszelezny.netlify.app/post/lasso-regression-in-r-called-by-f/</link>
+      <pubDate>Sat, 20 Feb 2016 23:59:08 +0000</pubDate>
+      <guid>https://andreaszelezny.netlify.app/post/lasso-regression-in-r-called-by-f/</guid>
+      <description>A lasso regression analysis was conducted to identify a subset of variables from a pool of 6 quantitative predictor variables that best predicted a quantitative response variable measuring the number of people employed. Quantitative predictor variables include Gross National Product (GNP), GNP implicit price deflator (1954=100), number of unemployed, number of people in the armed forces, ‘noninstitutionalized’ population ≥ 14 years of age, and the year (time).
+Because of the small size of the data set (N=16), data were not split into training and test sets.</description>
+    </item>
+    <item>
+      <title>Random Forest in R Called by F#</title>
+      <link>https://andreaszelezny.netlify.app/post/random-forest-in-r-called-by-f/</link>
+      <pubDate>Sun, 14 Feb 2016 22:55:47 +0000</pubDate>
+      <guid>https://andreaszelezny.netlify.app/post/random-forest-in-r-called-by-f/</guid>
+      <description>Random forest analysis was performed to evaluate the importance of a series of explanatory variables in predicting a binary, categorical response variable. The following explanatory variables were included as possible contributors to a random forest evaluating after surgery deformation (kyphosis) (my response variable), age in months (Age), number of vertebrae involved (Number), and the highest vertebrae operated on (Start).
+The accuracy of the random forest was 80%, with the subsequent growing of multiple trees rather than a single tree, adding little to the overall accuracy of the model, and suggesting that interpretation of a single decision tree may be appropriate.</description>
+    </item>
+    <item>
+      <title>Decision Tree in R Called by F#</title>
+      <link>https://andreaszelezny.netlify.app/post/classification-tree-in-r-called-by-f/</link>
+      <pubDate>Sun, 07 Feb 2016 22:12:58 +0000</pubDate>
+      <guid>https://andreaszelezny.netlify.app/post/classification-tree-in-r-called-by-f/</guid>
+      <description>Figure 1. Classification tree (N=81) to predict a type of deformation (kyphosis) after surgery (target variable)
+Decision tree analysis was performed to test nonlinear relationships among a series of explanatory variables and a binary, categorical response variable. All possible separations (categorical) or cut points (quantitative) are tested. For the present analyses, the entropy “goodness of split” criterion was used to grow the tree and a cost complexity algorithm was used for pruning the full tree into a final subtree.</description>
+    </item>
+  </channel>
+</rss>

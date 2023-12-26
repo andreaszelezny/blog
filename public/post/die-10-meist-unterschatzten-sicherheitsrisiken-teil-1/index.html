@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Andreas Zelezny">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://andreaszelezny.netlify.app//">
+    <meta property="twitter:image" content="https://andreaszelezny.netlify.app//" />
+    
+
+    
+    <meta name="title" content="Die 10 meist unterschätzten Sicherheitsrisiken (Teil 1)" />
+    <meta property="og:title" content="Die 10 meist unterschätzten Sicherheitsrisiken (Teil 1)" />
+    <meta property="twitter:title" content="Die 10 meist unterschätzten Sicherheitsrisiken (Teil 1)" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Die 10 meist unterschätzten Sicherheitsrisiken (Teil 1) | Andreas Zelezny Blog Cybersecurity Information Security CISO Speaker Author</title>
+
+    <link rel="canonical" href="/post/die-10-meist-unterschatzten-sicherheitsrisiken-teil-1/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andreas Zelezny</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/books//">BOOKS</a></li>
+                    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>Die 10 meist unterschätzten Sicherheitsrisiken (Teil 1)</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted on 
+                            18 May 2011
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h4 id="1-nicht-aktualisierte-software">1. Nicht aktualisierte Software</h4>
+<p><strong>Problem:</strong> Jahrelang war Windows das Hauptangriffsziel für Hacker, jedoch hat Microsoft daraus gelernt und in letzter Zeit erfolgreich große Anstrengungen unternommen, um seine Produkte sicherer und stabiler zu machen. Heutzutage stellen Softwareprodukte von Drittanbietern (wie zum Beispiel Adobe Reader) ein bevorzugtes Ziel dar.</p>
+<p><strong>Lösung:</strong> Installieren Sie immer so bald wie möglich alle relevanten Sicherheitsupdates. Dies betrifft nicht nur die Windows-Updates, die Sie am besten automatisch installieren lassen, sondern insbesondere auch Updates für Softwareprodukte von Drittanbietern (zum Beispiel Adobe Reader oder Flash). Gehen Sie dazu regelmäßig auf die Webseiten der Softwarehersteller und sehen Sie dort nach, ob es ein Update für die eingesetzten Produkte gibt. Sollte ein Produkt eine Auto-Update-Funktion anbieten, dann aktivieren Sie diese. Die installierte Software aktuell zu halten ist eine der einfachsten und wirkungsvollsten Maßnahmen, um sein System zu schützen.</p>
+<h4 id="2-ungenuumlgender-wlan-schutz">2. Ungenügender WLAN-Schutz</h4>
+<p><strong>Problem:</strong> Viele KMUs (kleine und mittlere Unternehmen) schützen ihr WLAN bereits mit einem Kennwort. Jedoch kann dies nicht immer ausreichend sein.</p>
+<p><strong>Lösung:</strong> Es gibt drei Verfahren der WLAN-Verschlüsselung: WEP, WPA und WPA2. WEP ist das älteste Verfahren und kann heutzutage mit speziellen Programmen in wenigen Minuten geknackt werden. Dennoch ist eine aktivierte WEP-Verschlüsselung besser als gar keine Verschlüsselung. WPA und insbesondere WPA2 bieten eine deutlich höhere Sicherheit für Ihr WLAN. Loggen Sie sich in Ihren Router ein und wechseln Sie zu den WLAN-Einstellungen. Aktivieren Sie dort die Verschlüsselung und wählen Sie WPA oder wenn möglich WPA2. Benutzen Sie ein möglichst langes und komplexes Kennwort.</p>
+<h4 id="3-manipulierte-wlan-hot-spots">3. Manipulierte WLAN-Hot-Spots</h4>
+<p><strong>Problem:</strong> Kostenlose und offene WLAN-Hot-Spots sind fast überall vorhanden und sehr bequem. Man sollte jedoch im Hinterkopf behalten, dass jeder Hot-Spot vollen Zugriff auf den über ihn laufenden unverschlüsselten Datenverkehr hat. Kriminelle nutzen dies aus und stellen manipulierte offene Hot-Spots auf, damit sie vertrauliche Daten wie Benutzernamen, Kennwörter, Kreditkartennummern usw. sammeln können.</p>
+<p><strong>Lösung:</strong> Wenn Sie sich in einem Kaffeehaus oder Hotel befinden, fragen Sie nach dem korrekten SSID. Der SSID ist der Name eines WLAN-Hot-Spots und wird auch in der Liste der verfügbaren WLANs Ihres Betriebssystems angezeigt. Achten Sie dabei auf die korrekte Schreibweise, da manipulierte Hot-Spots oft einen ähnlich klingenden Namen benutzen. Grundsätzlich sollten Sie öffentliche Netzwerke nicht zum Abrufen vertraulicher Informationen wie E-Mails oder zum Erledigen von Bankgeschäften verwenden, es sei denn, es steht Ihnen eine verschlüsselte Datenverbindung (VPN) direkt zu Ihrem Unternehmen zur Verfügung.</p>
+<h4 id="4-scareware">4. Scareware</h4>
+<p><strong>Problem:</strong> Bei Scareware handelt es sich um bösartige Software, deren Ziel es ist, den Anwender zu verunsichern und zu täuschen. Ein verbreitetes Beispiel dafür ist die beim Surfen auf einer Website plötzlich erscheinende Warnung, dass der PC mit einem Virus befallen wäre und der Anwender nun eine bestimmte Anti-Virus-Software herunterladen solle. Jene Anti-Virus-Software ist natürlich in Wirklichkeit ein Schadprogramm.</p>
+<p><strong>Lösung:</strong> Machen Sie sich mit Funktionsweise und Aussehen Ihrer installierten Sicherheitssoftware vertraut, damit Sie echte Warnungen von vorgetäuschten unterscheiden können.</p>
+<p>Laden Sie keinesfalls eine fremde Sicherheitssoftware herunter, sondern vertrauen Sie Ihrer installierten Sicherheitslösung. Lassen Sie sich nicht verunsichern! Sollten Sie noch keine Sicherheitssoftware installiert haben, benutzen Sie einen kostenlosen Online-Scanner eines renommierten Herstellers (z.B. <a href="http://housecall.trendmicro.com/">http://housecall.trendmicro.com</a> oder <a href="http://www.eset.com/online-scanner">http://www.eset.com/online-scanner</a>) oder das Microsoft Malicious Software Removal Tool (<a href="http://www.microsoft.com/security/malwareremove">http://www.microsoft.com/security/malwareremove</a>); installieren Sie anschließend eine gute Sicherheitssoftware (zum Beispiel das auch für Kleinunternehmen kostenlose Microsoft Security Essentials <a href="http://www.microsoft.com/security_essentials">http://www.microsoft.com/security_essentials</a>).</p>
+<p>Aktualisieren Sie Ihren Webbrowser. Die meisten aktuellen Webbrowser haben einen Phishing-Schutz eingebaut, der zu einem Großteil derartige gefälschte Meldungen erkennt.</p>
+<h4 id="5-trojanische-sms">5. Trojanische SMS</h4>
+<p><strong>Problem:</strong> Trojanische SMS sind Kurznachrichten auf Ihrem Handy oder Smartphone, die vortäuschen, von Ihrem Netzbetreiber oder Ihrer Bank zu kommen, und die Sie auffordern, eine bestimmte (in Wirklichkeit manipulierte) Website zu besuchen oder ein benötigtes (in Wirklichkeit bösartiges) Update zu installieren. In allen Fällen geht es jedoch darum, an Ihre vertraulichen Daten wie Benutzernamen, Kennwörter, Kreditkartennummern usw. heranzukommen.</p>
+<p><strong>Lösung:</strong> Sollten Sie eine Textnachricht erhalten, die von Ihnen verlangt eine Software zu installieren oder die versucht, automatisch eine Software zu installieren, beenden Sie die SMS-App umgehend. Sollte die Nachricht vorgeben, von einem vertrauenswürdigen Absender zu kommen, setzen Sie sich mit dem Absender in Verbindung (z.B. Kundendienst oder Hotline), und verifizieren Sie, dass die Nachricht korrekt ist. Grundsätzlich senden seriöse Unternehmen keine Updates oder Installationsaufforderungen per SMS. Verbrecher spekulieren darauf, dass sich ihre Opfer von den vermeintlich echten Absendernamen beeindrucken lassen und dann die Schadprogramme installieren.</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/der-weg-zu-vertrauenswurdigeren-systemen/" data-toggle="tooltip" data-placement="top" title="Der Weg zu vertrauenswürdigeren Systemen">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/die-10-meist-unterschatzten-sicherheitsrisiken-teil-2/" data-toggle="tooltip" data-placement="top" title="Die 10 meist unterschätzten Sicherheitsrisiken (Teil 2)">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/ai" title="ai">
+                            ai
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/cryptography" title="cryptography">
+                            cryptography
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/f" title="f#">
+                            f#
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdpCYpJ0JXH3Ztw7BiYJQuHKYDUZrekp2NGEz1pDDfKe0Dt1Q/viewform?usp=sf_link">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                     
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Andreas Zelezny" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 2023 Andreas Zelezny
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

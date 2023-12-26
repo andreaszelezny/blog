@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Andreas Zelezny">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://andreaszelezny.netlify.app//">
+    <meta property="twitter:image" content="https://andreaszelezny.netlify.app//" />
+    
+
+    
+    <meta name="title" content="AI Planning for Cyber Security" />
+    <meta property="og:title" content="AI Planning for Cyber Security" />
+    <meta property="twitter:title" content="AI Planning for Cyber Security" />
+    
+
+    
+    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>AI Planning for Cyber Security | Andreas Zelezny Blog Cybersecurity Information Security CISO Speaker Author</title>
+
+    <link rel="canonical" href="/post/ai-planning-for-cyber-security/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andreas Zelezny</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/books//">BOOKS</a></li>
+                    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/ai" title="ai">
+                            ai
+                        </a>
+                        
+                        <a class="tag" href="/tags/cyber-security" title="cyber security">
+                            cyber security
+                        </a>
+                        
+                        <a class="tag" href="/tags/planning" title="planning">
+                            planning
+                        </a>
+                        
+                    </div>
+                    <h1>AI Planning for Cyber Security</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted on 
+                            22 June 2015
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>A very interesting application of classical Artificial Intelligence (AI) planning in the field of cyber security is the Behavioral Adversary Modeling System (BAMS) developed by Mark Boddy, Johnathan Gohde, Tom Haigh and Steven Harp.</p>
+<p>The domain is computer network vulnerability analysis and the purpose of the system is to automatically generate an inside attacker’s course of action leading from various initial states to an attacker’s goal. The users of the system (i.e., computer network administrators) can use these attack plans to analyze vulnerabilities and to select the most reasonable and cost-effective defensive measures for their networks.</p>
+<p>The attack plans contain 20 to 50 atomic steps each and are generated within seconds. The plan generator is a classical forward heuristic planner, in this specific case the Metric-FF planner which offers two different search modes, enhanced hill climbing and best first search.</p>
+<p>The planning domain and the planning problem are both respresented in PDDL (Planning Domain Definition Language). The model contains many objects (e.g., computers, switches, programs, files, cryptographic keys, people, doors) and predicates (e.g., configuration of hosts, knowledge of people, status of files) to represent a computational environment. Actions change the computational environment and allow the attacker to reach her goal. Here is an example of an action which modifies the access control list for a document by giving read access for a group:</p>
+<pre>(:action DMS_ADD_GROUP_ALLOW
+      :parameters ( ?admin - c_human
+        ?chost - c_host
+        ?shost - c_host
+        ?doc - c_file
+        ?gid - c_gid )
+      :precondition
+        (and (pmode free)
+        (nes_admin_connected ?chost ?shost)
+        (at_host ?admin ?chost)
+        (insider ?admin))
+      :effect
+        (and
+        (dmsacl_read ?doc ?gid)))
+</pre>
+<p>The goal in this example is that Bob gets to know some secret information while keeping his detection risk low:</p>
+<pre>(:goal (knows bob secret_info))
+    (:metric minimize (detection_risk))
+</pre>
+<p>The PDDL domain and problem specifications are given as input to the planner, which automatically generates an attacking plan like the following:</p>
+<pre>0 : ADAM sits down at BIGFOOT
+    1 : ADAM enters ADAM_UID as user name for login on host BIGFOOT
+    2 : ADAM enters password ADAM_PWD for login at host BIGFOOT
+    3 : Shell B_WEXPLORE is launched on host BIGFOOT for user ADAM_UID
+    4 : Program WEXPLORER on host BIGFOOT forks a child process
+    5 : Contents of file B_IEXPLORE begin executing as uid ADAM_UID on host BIGFOOT
+    6 : BOB sits down at YETI
+    7 : BOB enters BOB_UID as user name for login on host YETI
+    8 : BOB enters password BOB_PWD for login at host YETI
+    9 : Shell Y_WEXPLORE is launched on host YETI for user BOB_UID
+    10 : Program WEXPLORER on host YETI forks a child process
+    11 : Contents of file Y_ETHEREAL begin executing as uid BOB_UID on host YETI
+    12 : ETHEREAL starts sniffing the networks on YETI
+    13 : ADAM logs onto dms admin server EVEREST from BIGFOOT
+    14 : BOB reads the sniffer thus learning NES_ADMIN_PASS
+    15 : Program WEXPLORER on host YETI forks a child process
+    16 : Contents of file Y_IEXPLORE begin executing as uid BOB_UID on host YETI
+    17 : BOB logs onto dms admin server EVEREST from YETI
+    18 : DMS session DMSS1 has begun
+    19 : BOB begins a DMS session on YETI
+    20 : Connect DMS session DMSS1 to server NES on EVEREST
+    21 : A route from YETI to DMS server EVEREST exists
+    22 : BOB enters password BOB_DMS_PWD for the DMS session.
+    23 : Authenticate BOB_UID in dms session DMSS1 with EVEREST using BOB_DMS_PWD
+    24 : BOB adds an acl to allow read access of E_SECRET_DOC to the EAST_GID group
+    25 : BOB begins a DMS request at YETI in session DMSS1
+    26 : Document E_SECRET_DOC is requested in session DMSS1
+    27 : Document E_SECRET_DOC is sent and displayed on YETI in session DMSS1
+    28 : BOB reads E_SECRET_DOC and learns SECRET_INFO
+</pre>
+<p>Even though the number of objects, propositions and actions is very limited in this system, it is still a very interesting proof of concept for the usage of artificial intelligence planning in the information security domain. Future work could also include a notion of uncertainty in the plan (i.e., probabilistic planning).</p>
+<p><strong>References</strong><br>
+Boddy, M.; Gohde, J.; Haigh, T.; and Harp, S.: Course of Action Generation for Cyber Security Using Classical Planning. In: Proceedings of ICAPS, 2005.</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/ki-und-data-science-in-der-informationssicherheit/" data-toggle="tooltip" data-placement="top" title="KI und Data Science in der Informationssicherheit">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/classification-tree-in-r-called-by-f/" data-toggle="tooltip" data-placement="top" title="Decision Tree in R Called by F#">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/ai" title="ai">
+                            ai
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/cryptography" title="cryptography">
+                            cryptography
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/f" title="f#">
+                            f#
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdpCYpJ0JXH3Ztw7BiYJQuHKYDUZrekp2NGEz1pDDfKe0Dt1Q/viewform?usp=sf_link">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/andreaszelezny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                     
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Andreas Zelezny" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 2023 Andreas Zelezny
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

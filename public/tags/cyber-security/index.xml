@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cyber security on Andreas Zelezny</title>
+    <link>https://andreaszelezny.netlify.app/tags/cyber-security/</link>
+    <description>Recent content in cyber security on Andreas Zelezny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jun 2015 23:27:06 +0000</lastBuildDate>
+    <atom:link href="https://andreaszelezny.netlify.app/tags/cyber-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Planning for Cyber Security</title>
+      <link>https://andreaszelezny.netlify.app/post/ai-planning-for-cyber-security/</link>
+      <pubDate>Mon, 22 Jun 2015 23:27:06 +0000</pubDate>
+      <guid>https://andreaszelezny.netlify.app/post/ai-planning-for-cyber-security/</guid>
+      <description>A very interesting application of classical Artificial Intelligence (AI) planning in the field of cyber security is the Behavioral Adversary Modeling System (BAMS) developed by Mark Boddy, Johnathan Gohde, Tom Haigh and Steven Harp.
+The domain is computer network vulnerability analysis and the purpose of the system is to automatically generate an inside attacker’s course of action leading from various initial states to an attacker’s goal. The users of the system (i.</description>
+    </item>
+  </channel>
+</rss>

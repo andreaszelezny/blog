@@ -1,4 +1,4 @@
-baseurl = "https://andreaszelezny.com/"
+baseurl = "https://andreaszelezny.netlify.app/"
 title = "Andreas Zelezny"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
