@@ -16,12 +16,12 @@ home = ["HTML", "RSS", "Algolia"]
   header_image_startpage = "img/main_bg.webp"
   header_image = "" #"img/home-header-bg.jpg"
   SEOTitle = "Andreas Zelezny Blog Cybersecurity Information Security CISO Speaker Author"
-  description = "赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"
-  keyword = "赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"
+  description = "Articles about information and cyber security topics, artificial intelligence (AI), machine learning, data science, and finance and business topics. Author can be booked as vCISO and speaker."
+  keyword = "information security, cybersecurity, IT security, artificial intelligence, AI, machine learning, data science, finance, business, leadership, vCISO, speaker"
   slogan = "" #Cyber Security, Artificial Intelligence, Data Science, Finance"
 
   image_404 = "img/404-bg.jpg"
-  title_404 = "你来到了没有知识的荒原 :("
+  title_404 = "Page Not Found :("
   omit_categories = true   # Sind zusätzliche Reiter oben im Header, zB Life, Tips
 
   # leancloud storage for page view counter
